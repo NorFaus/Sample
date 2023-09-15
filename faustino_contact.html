@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+
+         
+body {
+                
+                font-family: Century Gothic, Open Sans, Sans-serif;
+                background-image: url('box1.jpg')
+            
+
+        }
+
+        nav ul  {
+            background-color:rgba(80,208,255,0.7);
+            
+            
+        }
+
+        li  {
+            display: inline-block;list-style-type: none;
+        }
+
+        a  {
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px; 
+            display:block;
+            color:#fff;
+
+        }
+
+        
+     
+        footer{
+
+                background-color:rgba(80,208,255,0.7);
+                color: white;
+                padding-top: 2px;
+                padding-bottom: 2px;
+        }
+
+        footer p{
+
+            margin-left: 10px;
+            font-size: 14px;
+
+        }
+
+        .blocker {
+            clear: both !important;
+        }
+
+        .content{
+
+            max-width: 850px;
+            margin: 20px 250px 100px 250px;
+            background-color:rgba(255, 255, 255, 0.4);
+            padding: 10px;
+            
+        }
+
+        label {
+
+                width: 100px;
+                display: inline-block;
+                color:black;
+
+        }
+
+        input[type=text], select ,textarea{
+            width: 80%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid blue;
+            border-radius: 4px;
+        }
+
+        @media  and (max-width: 800px) {
+            .left, .main, .right .content{
+                width: 100%
+            }
+        }
+    </style>
+</head>
+<body>
+
+  <nav>
+        <ul>
+             <li> <a href="index.html">HOME</a></li>
+             <li> <a href="about.html">ABOUT US</a></li>
+             <li> <a href="faustino_contact.html">CONTACT</a></li>
+        </ul>
+ </nav> 
+ <div class="content"> 
+ <aside>
+
+    
+  
+        
+        <h1 style="text-align: left;">Contact Me</h1>
+    <nav>
+    <table>
+        <form>
+            <tr>
+            <td><Label>First Name</Label></td>
+            <td><input type="text" name="firstname" placeholder="Your Name"/></td>
+            </tr>
+           
+            <tr>
+            <td><Label>Last Name</Label></td> 
+            <td><input type="text" name="lastname" placeholder="Your Last Name"/></td>
+            </tr>
+         
+            <tr>
+            <td><Label>E-mail</Label></td>
+            <td><input type="text" name="email" placeholder="sample@host.com"/></td>
+            </tr>
+            
+            <tr>
+            <td><Label>Telephone No.</Label></td>
+            <td><input type="text" name="telno" placeholder="Telephone No. Here"/>
+            </tr>
+    
+            <tr>
+            <td><Label>Province</Label></td>
+            <td><select id="province">
+                <option>Province 1</option>
+                <option>Province 2</option>
+            </select>
+            </td>
+            </tr>
+            
+            <tr>
+            <td><label>City Town</label></td>
+            <td><select id="City">
+                <option>City of Mati</option>
+                <option>Davao City</option>
+            </select>
+            </td>
+            </tr>
+    
+            <tr>
+            <td><label>Barangay</label></td>
+            <td>
+            <select id="brgy">
+                <option>Central</option>
+                <option>Badas</option>
+            </select>
+            </td>
+            </tr>
+    
+            <tr>
+            <td><label>Message</label></td>
+            <td><textarea name="message" style="height: 200px; width: 500px;" placeholder="write something...."></textarea></br>
+                 <input type="Submit" value="Submit">
+            </td>
+            </tr> 
+        </form>
+    </table>
+
+
+    </div>
+    
+   
+
+    <div class="blocker"></div>
+
+    <footer>
+            <p>Copyright &copy; 2023 | Powered by FAUSTINO SCHOOL OF COMPUTING</p>
+    </footer>
+
+    
+</body>
+</html>

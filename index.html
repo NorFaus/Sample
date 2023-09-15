@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Website</title>
+    <style>
+
+           
+
+
+           *{
+            box-sizing: border-box;
+        }
+
+        .left {
+        
+            padding: 20px;
+            float:left;
+            width: 25%;
+            text-align: left;
+            font-size: 16px;
+            background-color:rgba(255, 255, 255, 0.4);
+            
+
+        }
+
+        .main{
+ 
+            padding: 20px;
+            float:left;
+            width: 25%;
+            text-align: left;
+            font-size: 16px;
+            background-color:rgba(255, 255, 255, 0.4);
+        }
+
+        .right {
+            
+            padding: 20px;
+            float:left;
+            width: 25%;
+            text-align: left;
+            font-size: 16px;
+            background-color:rgba(255, 255, 255, 0.4);
+        }
+
+        
+            
+        
+        body {
+                
+                font-family: Century Gothic, Open Sans, Sans-serif;      
+                background-image: url('LAB.jpg')
+            
+
+        }
+
+        nav ul  {
+            background-color:rgba(80,208,255,0.7);
+           
+
+        }
+
+        li  {
+            display: inline-block;list-style-type: none;
+            
+        }
+
+        a  {
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px; 
+            display:block;
+            color:#fff;
+
+        }
+
+        
+        aside{
+                float: right;
+                width: 200px;
+                margin-top: 5px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                margin-left: 10px;
+            }
+
+        
+        aside h3{
+
+                background-color:rgba(80,208,255,0.7);
+                color: #fff;
+                padding: 10px;
+                text-align: center;
+                width: 100%
+                
+        }
+
+        aside li{
+
+                list-style-type: none;
+                padding-top: 5px;
+                text-align: center;
+                width: 100%;
+        }
+
+        
+        aside a{
+
+                background-color:rgba(255, 255, 255, 0.4);
+                text-decoration: none;
+                color: black;
+                line-height: 10px;
+                margin-left: 20px;
+        }
+
+        footer{
+
+                background-color:rgba(80,208,255,0.7);
+                color: white;
+                padding-top: 2px;
+                padding-bottom: 2px;
+        }
+
+        footer p{
+
+            margin-left: 10px;
+            font-size: 14px;
+
+        }
+
+        .blocker {
+            clear: both !important;
+        }
+
+        #bukad{display: none;}
+        #bloom{display: none;}
+        #bukad1{display: none;}
+        button{background-color: #34a3f7;
+               width: 150px;
+               font-size: 20px;
+               padding: 5px; 
+               font-family: Century Gothic;
+               border: none;}
+        
+               @media  and (max-width: 800px) {
+            .left, .main, .right{
+                width: 100%
+            }
+
+    </style>
+</head>
+<body>
+    
+   
+
+    <nav>
+        <ul>
+             <li> <a href="index.html">HOME</a></li>
+             <li> <a href="about.html">ABOUT US</a></li>
+             <li> <a href="faustino_contact.html">CONTACT</a></li>
+        </ul>
+     </nav> 
+
+
+     <div class="left">
+       
+        <h1>BACHELOR OF SCIENCE IN COMPUTER SCIENCE</h1>
+        <p> Bachelor of Science in Computer Science (BSCS) is a four-year 
+            program that includes the study of computing concepts and theories,
+            algorithmic foundations,
+            and new developments in computing program prepares 
+            its students to design and create algorithmically complex 
+            software and develop new and effective algorithms for 
+            solving computing problems.<span id="tuldok">...</span><span id="bukad">The program includes the study<br>
+            of the standards and practices in Software Engineering.
+            It prepares students to acquire skills and disciplines 
+            required for designing, writing, and modifying software 
+            components, modules, and applications that comprise software solutions.</span>
+        </p>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+            <script>
+                function myFunction() {
+                  var tuldok = document.getElementById("tuldok");
+                  var moreText = document.getElementById("bukad");
+                  var btnText = document.getElementById("myBtn");
+                
+                  if (tuldok.style.display === "none") {
+                    tuldok.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                  } else {
+                    tuldok.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                  }
+                }
+                </script>
+                
+        </div>
+
+    <div class="main">
+       
+        <h1>BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY</h1>
+        <p>Information Technology (IT)is the study of utilization of both hardware
+           and software technologies to provide computing solutions that
+           address the needs of various users and organizations. The Information 
+           Technology (IT) program encompasses a wide range of knowledge areas – 
+           from organizational information systems to systems infrastructure to
+            <span id="period">...</span><span id="bloom">  
+           prepare graduates that have the capability to select, apply, configure,
+           integrate, deploy, and administer computing technology to meet user
+           requirements over a large spectrum of contexts.</span>
+        </p>
+        <button onclick="myMainFunction()" id="mymainBtn">Read more</button>
+            <script>
+                function myMainFunction() {
+                  var tuldok = document.getElementById("period");
+                  var moreText = document.getElementById("bloom");
+                  var btnText = document.getElementById("mymainBtn");
+                
+                  if (tuldok.style.display === "none") {
+                    tuldok.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                  } 
+                  
+                  else {
+                    tuldok.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                  }
+                }
+                </script>
+    </div>
+
+    <div class="right">
+       
+         <h1>BACHELOR OF SCIENCE IN COMPUTER ENGINEERING</h1>
+         <p> Bachelor of Science in Computer Engineering (BSCpE) program is 
+            a conglomeration of various elements of Electrical Engineering and
+             Computer Science. It encompasses the fundamental principles, methods, 
+             and modern tools for design, and implementation of computing systems.
+             The program deals with a balanced perspective of both hardware
+             <span id="tuldok1">...</span><span id="bukad1">
+            and 
+            software elements of computing systems, and their relative design 
+            trade-offs and applications. This engineering program builds upon 
+            fundamental courses in mathematics, sciences, and engineering disciplines 
+            to achieve sound and comprehensive solutions leading to the discovery of
+             new technological trends in computing.</span>
+        </p>
+
+        <button onclick="myrytFunction()" id="myrytBtn">Read more</button>
+            <script>
+                function myrytFunction() {
+                  var tuldok = document.getElementById("tuldok1");
+                  var moreText = document.getElementById("bukad1");
+                  var btnText = document.getElementById("myrytBtn");
+                
+                  if (tuldok.style.display === "none") {
+                    tuldok.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                  } else {
+                    tuldok.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                  }
+                }
+                </script>
+    </div>
+
+     <aside>
+        
+        
+            
+                <ul>
+                    <h3>Linked Website</h3>
+                    <li><a href="#">Google</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="#">Yahoo</a></li>
+                    <li><a href="#">MSN</a></li>
+                    <li><a href="#">Lazada</a></li>
+                    <li><a href="#">Shopee</a></li>
+
+             </ul>
+          
+        
+                <ul>
+                    <h3>Shopping Website</h3>
+                    <li><a href="#">Lazada</li>
+                    <li><a href="#">Shopee</li>   
+                </ul>
+
+    </aside>
+
+    <div class="blocker"></div>
+    <footer>
+            <p>Copyright &copy; 2023 | Powered by FAUSTINO SCHOOL OF COMPUTING.</p>
+    </footer>
+
+</body>
+</html>
